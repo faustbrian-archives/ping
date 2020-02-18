@@ -1,6 +1,8 @@
 <?php
 
-namespace BrianFaust\Ping;
+namespace KodeKeep\Ping;
+
+use InvalidArgumentException;
 
 class Ping
 {
@@ -32,7 +34,7 @@ class Ping
     /**
      * @param string $value
      *
-     * @return \BrianFaust\Ping\Ping
+     * @return \KodeKeep\Ping\Ping
      */
     public function driver(string $value): Ping
     {
@@ -44,7 +46,7 @@ class Ping
     /**
      * @param string $value
      *
-     * @return \BrianFaust\Ping\Ping
+     * @return \KodeKeep\Ping\Ping
      */
     public function host(string $value): Ping
     {
@@ -56,7 +58,7 @@ class Ping
     /**
      * @param int $value
      *
-     * @return \BrianFaust\Ping\Ping
+     * @return \KodeKeep\Ping\Ping
      */
     public function port(int $value): Ping
     {
@@ -68,7 +70,7 @@ class Ping
     /**
      * @param int $value
      *
-     * @return \BrianFaust\Ping\Ping
+     * @return \KodeKeep\Ping\Ping
      */
     public function timeout(int $value): Ping
     {
@@ -80,7 +82,7 @@ class Ping
     /**
      * @param int $value
      *
-     * @return \BrianFaust\Ping\Ping
+     * @return \KodeKeep\Ping\Ping
      */
     public function ttl(int $value): Ping
     {
@@ -96,10 +98,10 @@ class Ping
      */
     public function ping()
     {
-        $class = "BrianFaust\\Ping\\Drivers\\{$this->driver}";
+        $class = "KodeKeep\\Ping\\Drivers\\{$this->driver}";
 
         if (!class_exists($class)) {
-            throw new \InvalidArgumentException("The driver [{$this->driver}] is not supported.");
+            throw new InvalidArgumentException("The driver [{$this->driver}] is not supported.");
         }
 
         return (new $class())->ping($this->host, $this->port, $this->timeout, $this->ttl);

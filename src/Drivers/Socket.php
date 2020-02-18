@@ -1,6 +1,6 @@
 <?php
 
-namespace BrianFaust\Ping\Drivers;
+namespace KodeKeep\Ping\Drivers;
 
 class Socket implements Driver
 {
