@@ -1,13 +1,13 @@
 # Ping
 
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/kodekeep/ping/run-tests?label=tests)](https://github.com/kodekeep/ping/actions?query=workflow%3Arun-tests+branch%3Amaster)
-[![Code Coverage](https://badgen.now.sh/codecov/c/github/kodekeep/ping)](https://codecov.io/gh/kodekeep/ping)
-[![Minimum PHP Version](https://badgen.net/packagist/php/kodekeep/ping)](https://packagist.org/packages/kodekeep/ping)
 [![Latest Version](https://badgen.net/packagist/v/kodekeep/ping)](https://packagist.org/packages/kodekeep/ping)
+[![Software License](https://badgen.net/packagist/license/kodekeep/ping)](https://packagist.org/packages/kodekeep/ping)
+[![Build Status](https://img.shields.io/github/workflow/status/kodekeep/ping/run-tests?label=tests)](https://github.com/kodekeep/ping/actions?query=workflow%3Arun-tests+branch%3Amaster)
+[![Coverage Status](https://badgen.net/codeclimate/coverage/kodekeep/ping)](https://codeclimate.com/github/kodekeep/ping)
+[![Quality Score](https://badgen.net/codeclimate/maintainability/kodekeep/ping)](https://codeclimate.com/github/kodekeep/ping)
 [![Total Downloads](https://badgen.net/packagist/dt/kodekeep/ping)](https://packagist.org/packages/kodekeep/ping)
-[![License](https://badgen.net/packagist/license/kodekeep/ping)](https://packagist.org/packages/kodekeep/ping)
 
-> Host Pinging for PHP.
+This package was created by, and is maintained by [Brian Faust](https://github.com/faustbrian), and provides `ping` capabilities for PHP.
 
 ## Installation
 
@@ -49,6 +49,10 @@ If you discover a security vulnerability within this package, please send an e-m
 
 This project exists thanks to all the people who [contribute](../../contributors).
 
+## Support Us
+
+We invest a lot of resources into creating and maintaining our packages. You can support us and the development through [GitHub Sponsors](https://github.com/sponsors/faustbrian).
+
 ## License
 
-Mozilla Public License Version 2.0 (MPL-2.0). Please see [License File](LICENSE.md) for more information.
+Ping is an open-sourced software licensed under the [MPL-2.0](LICENSE.md).
